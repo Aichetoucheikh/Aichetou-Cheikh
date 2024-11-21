@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 10</title>
+</head>
+<body>
+    <script>
+        const dateActuelle = new Date();
+        const jour = String(dateActuelle.getDate()).padStart(2, "0");
+        const mois = String(dateActuelle.getMonth() + 1).padStart(2, "0");
+        const annee = dateActuelle.getFullYear();
+        alert("Date actuelle : " + jour + "/" + mois + "/" + annee);
+    </script>
+</body>
+</html>

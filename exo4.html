@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 4</title>
+</head>
+<body>
+    <script>
+        // Demander un nombre à l'utilisateur
+        const nombre = parseInt(prompt("Entrez un nombre pour voir sa table de multiplication :"), 10);
+
+        // Vérifier si l'entrée est un nombre valide
+        if (!isNaN(nombre)) {
+            let result = ""; // Variable pour stocker le résultat
+            
+            // Boucle for pour générer la table de multiplication
+            for (let i = 1; i <= 10; i++) {
+                result += nombre + " x " + i + " = " + (nombre * i) + "\n";
+            }
+
+            // Afficher le résultat
+            alert(result);
+        } else {
+            // Si l'entrée est invalide
+            alert("Veuillez entrer un nombre valide.");
+        }
+    </script>
+</body>
+</html>

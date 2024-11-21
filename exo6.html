@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 6</title>
+</head>
+<body>
+    <script>
+        const jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+        const numero = parseInt(prompt("Entrez un numéro entre 1 et 7 :"), 10);
+
+        if (numero >= 1 && numero <= 7) {
+            alert("Le jour correspondant est : " + jours[numero - 1]);
+        } else {
+            alert("Numéro invalide. Veuillez entrer un nombre entre 1 et 7.");
+        }
+    </script>
+</body>
+</html>
